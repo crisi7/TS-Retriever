@@ -1,0 +1,3 @@
+[submodule "train/contriever"]
+	path = train/contriever
+	url = https://github.com/suzhou-22/contriever.git
