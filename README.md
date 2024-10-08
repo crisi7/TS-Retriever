@@ -3,9 +3,7 @@ This repository contains sft models, benchmark dataset and code for evaluation f
 
 ## Dataset
 ``evaluation/data/nobel_prize``: this folder contains the test benchmark dataset, including queries and corpus.
-``
 ``train/dataset/sft/``: this folder contains the train dataset to finetune the contriever.
-
 ## SFT models
 The following models are available:
 * Tscontriever: The finetuned model using positive and negative sample pairs with temporal constraints.
