@@ -9,9 +9,11 @@ The following models are available:
 * Tscontriever: The finetuned model using positive and negative sample pairs with temporal constraints.
 * Tscontriever_query_only: the query-side finetuned model.
 * Router: A simple classifier is used to route the query.
+
 The model weights can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
 ## Evaluation
 We pre-computed and stored the embeddings of the query and the documents to be retrieved. You can reproduce the results on our benchmark using the following command.
+
 The embeddings can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
 
 * For Tscontriever result:
