@@ -14,6 +14,7 @@ The following models are available:
 The model weights can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
 ## Evaluation
 We pre-computed and stored the embeddings of the query and the documents to be retrieved. You can reproduce the results on our benchmark using the following command.
+The embeddings can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
 
 * For Tscontriever result:
 ```bash
@@ -62,7 +63,7 @@ python ./train/contriever/contriever/finetuning.py \
     --total_steps 1500 \
     --negative_ctxs 1
 ```
-* For Tscontriever_query_only result:
+* For Tscontriever_query_only:
 ```bash
 python ./train/contriever/finetuning_frozen.py \
     --model_path <your contriever model path> \
