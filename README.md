@@ -10,11 +10,11 @@ The following models are available:
 * Tscontriever_query_only: the query-side finetuned model.
 * Router: A simple classifier is used to route the query.
 
-The model weights can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
+The model weights can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m) or [this Google Drive link](https://drive.google.com/drive/folders/1qYmsLeyYw6X2gNsKw0CkS6Se7vG-0RR_?usp=sharing).
 ## Evaluation
 We pre-computed and stored the embeddings of the query and the documents to be retrieved. You can reproduce the results on our benchmark using the following command.
 
-The embeddings can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m).
+The embeddings can be downloaded from [this Baidu Netdisk link](https://pan.baidu.com/s/1Rwyo7N9lyo6H0OON97c5mg?pwd=9f5m) or [this Google Drive link](https://drive.google.com/drive/folders/1qYmsLeyYw6X2gNsKw0CkS6Se7vG-0RR_?usp=sharing).
 
 * For Tscontriever result:
 ```bash
