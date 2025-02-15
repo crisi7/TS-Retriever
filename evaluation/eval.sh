@@ -1,7 +1,14 @@
-embed_model_query="Tscontriever_with_differ_dataset"
-embed_model_doc="Tscontriever_with_differ_dataset"
-query_embed_save_dir="./temp_embed_files/query"
-doc_embed_save_dir="./temp_embed_files/docs"
+# 设置默认值
+default_query="Tscontriever"
+default_doc="Tscontriever"
+default_qdir="./temp_embed_files/query"
+default_ddir="./temp_embed_files/docs"
+
+# 获取参数或使用默认值
+embed_model_query=${1:-$default_query}
+embed_model_doc=${2:-$default_doc}
+query_embed_save_dir=${3:-$default_qdir}
+doc_embed_save_dir=${4:-$default_ddir}
 
 python embed_query.py \
     "${query_embed_save_dir}" \

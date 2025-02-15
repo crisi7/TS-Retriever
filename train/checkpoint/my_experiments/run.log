@@ -1,0 +1,90 @@
+[02/11/2025 16:30:45] {finetuning_frozen.py:234} INFO - [Network] Total number of parameters : 217.783296 M
+[02/11/2025 16:30:45] {finetuning_frozen.py:248} INFO - Start training
+[02/11/2025 16:30:46] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.823
+[02/11/2025 16:30:46] {finetuning_frozen.py:67} INFO - Start epoch 1, number of batches: 125
+[02/11/2025 16:31:02] {finetuning_frozen.py:97} INFO - 100 / 1500 | train/accuracy: 77.266 | train/loss: 1.093 | train/stdk: 0.368 | train/stdq: 0.048 | lr: 9.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:31:02] {finetuning_frozen.py:196} INFO - eval acc: 75.76% | eval mrr: 0.863
+[02/11/2025 16:31:06] {finetuning_frozen.py:67} INFO - Start epoch 2, number of batches: 125
+[02/11/2025 16:31:18] {finetuning_frozen.py:97} INFO - 200 / 1500 | train/accuracy: 85.828 | train/loss: 0.592 | train/stdk: 0.424 | train/stdq: 0.047 | lr: 8.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:31:19] {finetuning_frozen.py:196} INFO - eval acc: 74.55% | eval mrr: 0.859
+[02/11/2025 16:31:27] {finetuning_frozen.py:67} INFO - Start epoch 3, number of batches: 125
+[02/11/2025 16:31:35] {finetuning_frozen.py:97} INFO - 300 / 1500 | train/accuracy: 88.875 | train/loss: 0.470 | train/stdk: 0.439 | train/stdq: 0.048 | lr: 7.99e-05 | Memory: 4.0 GiB
+[02/11/2025 16:31:36] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.836
+[02/11/2025 16:31:48] {finetuning_frozen.py:67} INFO - Start epoch 4, number of batches: 125
+[02/11/2025 16:31:52] {finetuning_frozen.py:97} INFO - 400 / 1500 | train/accuracy: 90.641 | train/loss: 0.397 | train/stdk: 0.448 | train/stdq: 0.048 | lr: 7.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:31:53] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.829
+[02/11/2025 16:32:08] {finetuning_frozen.py:97} INFO - 500 / 1500 | train/accuracy: 91.844 | train/loss: 0.346 | train/stdk: 0.456 | train/stdq: 0.048 | lr: 6.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:32:09] {finetuning_frozen.py:196} INFO - eval acc: 76.97% | eval mrr: 0.869
+[02/11/2025 16:32:09] {finetuning_frozen.py:67} INFO - Start epoch 5, number of batches: 125
+[02/11/2025 16:32:25] {finetuning_frozen.py:97} INFO - 600 / 1500 | train/accuracy: 93.922 | train/loss: 0.292 | train/stdk: 0.463 | train/stdq: 0.048 | lr: 6e-05 | Memory: 4.0 GiB
+[02/11/2025 16:32:26] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.853
+[02/11/2025 16:32:30] {finetuning_frozen.py:67} INFO - Start epoch 6, number of batches: 125
+[02/11/2025 16:32:42] {finetuning_frozen.py:97} INFO - 700 / 1500 | train/accuracy: 94.906 | train/loss: 0.258 | train/stdk: 0.468 | train/stdq: 0.048 | lr: 5.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:32:43] {finetuning_frozen.py:196} INFO - eval acc: 75.15% | eval mrr: 0.859
+[02/11/2025 16:32:51] {finetuning_frozen.py:67} INFO - Start epoch 7, number of batches: 125
+[02/11/2025 16:32:59] {finetuning_frozen.py:97} INFO - 800 / 1500 | train/accuracy: 96.000 | train/loss: 0.234 | train/stdk: 0.472 | train/stdq: 0.047 | lr: 4.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:33:00] {finetuning_frozen.py:196} INFO - eval acc: 76.97% | eval mrr: 0.868
+[02/11/2025 16:33:12] {finetuning_frozen.py:67} INFO - Start epoch 8, number of batches: 125
+[02/11/2025 16:33:16] {finetuning_frozen.py:97} INFO - 900 / 1500 | train/accuracy: 96.047 | train/loss: 0.214 | train/stdk: 0.476 | train/stdq: 0.048 | lr: 4e-05 | Memory: 4.0 GiB
+[02/11/2025 16:33:17] {finetuning_frozen.py:196} INFO - eval acc: 72.73% | eval mrr: 0.846
+[02/11/2025 16:33:33] {finetuning_frozen.py:97} INFO - 1000 / 1500 | train/accuracy: 96.797 | train/loss: 0.194 | train/stdk: 0.480 | train/stdq: 0.047 | lr: 3.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:33:33] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.847
+[02/11/2025 16:33:33] {finetuning_frozen.py:67} INFO - Start epoch 9, number of batches: 125
+[02/11/2025 16:33:49] {finetuning_frozen.py:97} INFO - 1100 / 1500 | train/accuracy: 97.391 | train/loss: 0.167 | train/stdk: 0.482 | train/stdq: 0.048 | lr: 2.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:33:50] {finetuning_frozen.py:196} INFO - eval acc: 73.33% | eval mrr: 0.846
+[02/11/2025 16:33:54] {finetuning_frozen.py:67} INFO - Start epoch 10, number of batches: 125
+[02/11/2025 16:34:06] {finetuning_frozen.py:97} INFO - 1200 / 1500 | train/accuracy: 97.812 | train/loss: 0.157 | train/stdk: 0.484 | train/stdq: 0.048 | lr: 2e-05 | Memory: 4.0 GiB
+[02/11/2025 16:34:07] {finetuning_frozen.py:196} INFO - eval acc: 73.33% | eval mrr: 0.845
+[02/11/2025 16:34:15] {finetuning_frozen.py:67} INFO - Start epoch 11, number of batches: 125
+[02/11/2025 16:34:23] {finetuning_frozen.py:97} INFO - 1300 / 1500 | train/accuracy: 97.891 | train/loss: 0.147 | train/stdk: 0.486 | train/stdq: 0.048 | lr: 1.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:34:24] {finetuning_frozen.py:196} INFO - eval acc: 74.55% | eval mrr: 0.854
+[02/11/2025 16:34:36] {finetuning_frozen.py:67} INFO - Start epoch 12, number of batches: 125
+[02/11/2025 16:34:40] {finetuning_frozen.py:97} INFO - 1400 / 1500 | train/accuracy: 98.141 | train/loss: 0.135 | train/stdk: 0.486 | train/stdq: 0.047 | lr: 6.66e-06 | Memory: 4.0 GiB
+[02/11/2025 16:34:41] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.851
+[02/11/2025 16:34:57] {finetuning_frozen.py:97} INFO - 1500 / 1500 | train/accuracy: 98.312 | train/loss: 0.131 | train/stdk: 0.487 | train/stdq: 0.048 | lr: 0 | Memory: 4.0 GiB
+[02/11/2025 16:34:57] {finetuning_frozen.py:196} INFO - eval acc: 75.15% | eval mrr: 0.857
+[02/11/2025 16:39:35] {finetuning_frozen.py:234} INFO - [Network] Total number of parameters : 217.783296 M
+[02/11/2025 16:39:35] {finetuning_frozen.py:248} INFO - Start training
+[02/11/2025 16:39:36] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.823
+[02/11/2025 16:39:36] {finetuning_frozen.py:67} INFO - Start epoch 1, number of batches: 125
+[02/11/2025 16:39:52] {finetuning_frozen.py:97} INFO - 100 / 1500 | train/accuracy: 77.266 | train/loss: 1.093 | train/stdk: 0.368 | train/stdq: 0.048 | lr: 9.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:39:53] {finetuning_frozen.py:196} INFO - eval acc: 75.76% | eval mrr: 0.863
+[02/11/2025 16:39:57] {finetuning_frozen.py:67} INFO - Start epoch 2, number of batches: 125
+[02/11/2025 16:40:09] {finetuning_frozen.py:97} INFO - 200 / 1500 | train/accuracy: 85.828 | train/loss: 0.592 | train/stdk: 0.424 | train/stdq: 0.047 | lr: 8.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:40:10] {finetuning_frozen.py:196} INFO - eval acc: 74.55% | eval mrr: 0.859
+[02/11/2025 16:40:18] {finetuning_frozen.py:67} INFO - Start epoch 3, number of batches: 125
+[02/11/2025 16:40:26] {finetuning_frozen.py:97} INFO - 300 / 1500 | train/accuracy: 88.875 | train/loss: 0.470 | train/stdk: 0.439 | train/stdq: 0.048 | lr: 7.99e-05 | Memory: 4.0 GiB
+[02/11/2025 16:40:26] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.836
+[02/11/2025 16:40:39] {finetuning_frozen.py:67} INFO - Start epoch 4, number of batches: 125
+[02/11/2025 16:40:43] {finetuning_frozen.py:97} INFO - 400 / 1500 | train/accuracy: 90.641 | train/loss: 0.397 | train/stdk: 0.448 | train/stdq: 0.048 | lr: 7.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:40:43] {finetuning_frozen.py:196} INFO - eval acc: 70.91% | eval mrr: 0.829
+[02/11/2025 16:40:59] {finetuning_frozen.py:97} INFO - 500 / 1500 | train/accuracy: 91.844 | train/loss: 0.346 | train/stdk: 0.456 | train/stdq: 0.048 | lr: 6.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:41:00] {finetuning_frozen.py:196} INFO - eval acc: 76.97% | eval mrr: 0.869
+[02/11/2025 16:41:00] {finetuning_frozen.py:67} INFO - Start epoch 5, number of batches: 125
+[02/11/2025 16:41:17] {finetuning_frozen.py:97} INFO - 600 / 1500 | train/accuracy: 93.922 | train/loss: 0.292 | train/stdk: 0.463 | train/stdq: 0.048 | lr: 6e-05 | Memory: 4.0 GiB
+[02/11/2025 16:41:17] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.853
+[02/11/2025 16:41:21] {finetuning_frozen.py:67} INFO - Start epoch 6, number of batches: 125
+[02/11/2025 16:41:33] {finetuning_frozen.py:97} INFO - 700 / 1500 | train/accuracy: 94.906 | train/loss: 0.258 | train/stdk: 0.468 | train/stdq: 0.048 | lr: 5.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:41:34] {finetuning_frozen.py:196} INFO - eval acc: 75.15% | eval mrr: 0.859
+[02/11/2025 16:41:42] {finetuning_frozen.py:67} INFO - Start epoch 7, number of batches: 125
+[02/11/2025 16:41:51] {finetuning_frozen.py:97} INFO - 800 / 1500 | train/accuracy: 96.000 | train/loss: 0.234 | train/stdk: 0.472 | train/stdq: 0.047 | lr: 4.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:41:51] {finetuning_frozen.py:196} INFO - eval acc: 76.97% | eval mrr: 0.868
+[02/11/2025 16:42:03] {finetuning_frozen.py:67} INFO - Start epoch 8, number of batches: 125
+[02/11/2025 16:42:08] {finetuning_frozen.py:97} INFO - 900 / 1500 | train/accuracy: 96.047 | train/loss: 0.214 | train/stdk: 0.476 | train/stdq: 0.048 | lr: 4e-05 | Memory: 4.0 GiB
+[02/11/2025 16:42:08] {finetuning_frozen.py:196} INFO - eval acc: 72.73% | eval mrr: 0.846
+[02/11/2025 16:42:24] {finetuning_frozen.py:97} INFO - 1000 / 1500 | train/accuracy: 96.797 | train/loss: 0.194 | train/stdk: 0.480 | train/stdq: 0.047 | lr: 3.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:42:25] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.847
+[02/11/2025 16:42:25] {finetuning_frozen.py:67} INFO - Start epoch 9, number of batches: 125
+[02/11/2025 16:42:41] {finetuning_frozen.py:97} INFO - 1100 / 1500 | train/accuracy: 97.391 | train/loss: 0.167 | train/stdk: 0.482 | train/stdq: 0.048 | lr: 2.66e-05 | Memory: 4.0 GiB
+[02/11/2025 16:42:42] {finetuning_frozen.py:196} INFO - eval acc: 73.33% | eval mrr: 0.846
+[02/11/2025 16:42:46] {finetuning_frozen.py:67} INFO - Start epoch 10, number of batches: 125
+[02/11/2025 16:42:58] {finetuning_frozen.py:97} INFO - 1200 / 1500 | train/accuracy: 97.812 | train/loss: 0.157 | train/stdk: 0.484 | train/stdq: 0.048 | lr: 2e-05 | Memory: 4.0 GiB
+[02/11/2025 16:42:59] {finetuning_frozen.py:196} INFO - eval acc: 73.33% | eval mrr: 0.845
+[02/11/2025 16:43:07] {finetuning_frozen.py:67} INFO - Start epoch 11, number of batches: 125
+[02/11/2025 16:43:15] {finetuning_frozen.py:97} INFO - 1300 / 1500 | train/accuracy: 97.891 | train/loss: 0.147 | train/stdk: 0.486 | train/stdq: 0.048 | lr: 1.33e-05 | Memory: 4.0 GiB
+[02/11/2025 16:43:16] {finetuning_frozen.py:196} INFO - eval acc: 74.55% | eval mrr: 0.854
+[02/11/2025 16:43:28] {finetuning_frozen.py:67} INFO - Start epoch 12, number of batches: 125
+[02/11/2025 16:43:32] {finetuning_frozen.py:97} INFO - 1400 / 1500 | train/accuracy: 98.141 | train/loss: 0.135 | train/stdk: 0.486 | train/stdq: 0.047 | lr: 6.66e-06 | Memory: 4.0 GiB
+[02/11/2025 16:43:33] {finetuning_frozen.py:196} INFO - eval acc: 73.94% | eval mrr: 0.851
+[02/11/2025 16:43:49] {finetuning_frozen.py:97} INFO - 1500 / 1500 | train/accuracy: 98.312 | train/loss: 0.131 | train/stdk: 0.487 | train/stdq: 0.048 | lr: 0 | Memory: 4.0 GiB
+[02/11/2025 16:43:50] {finetuning_frozen.py:196} INFO - eval acc: 75.15% | eval mrr: 0.857

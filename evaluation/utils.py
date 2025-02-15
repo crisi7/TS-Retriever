@@ -43,23 +43,23 @@ def load_embed_model_by_name(embed_model_name):
         "Tscontriever_query_only": {"model_name_or_path": "./models/Tscontriever_query_only"},
         "openai": {"api_base": None, "api_key": None},
         "Tscontriever_query_only_lora": {"model_name_or_path":"./models/Tscontriever", "lora_model_path": "./models/Tscontriever_query_only_lora"},
-        "jinaai": {"model_name_or_path": "jinaai/jina-embeddings-v2-base-en"},
-        "tasb": {"model_name_or_path": "sebastian-hofstaetter/distilbert-dot-tas_b-b256-msmarco"},
+        "jinaai": {"model_name_or_path": "./models/jinaai/jina-embeddings-v2-base-en"},
+        "tasb": {"model_name_or_path": "./models/sebastian-hofstaetter/distilbert-dot-tas_b-b256-msmarco"},
         "Tscontriever_with_router": {"router_state_dict_path": "./models/router/model_state_dict.pth"}
     }
     if embed_model_name == "contriever":
         embed_model = ContrieverEmbedder(**embed_model_name_with_kwargs[embed_model_name])
-    if embed_model_name == "Tscontriever_with_differ_dataset":
+    elif embed_model_name == "Tscontriever_with_differ_dataset":
         embed_model = ContrieverEmbedder(**embed_model_name_with_kwargs[embed_model_name])
     elif embed_model_name == "Tscontriever":
         embed_model = ContrieverEmbedder(**embed_model_name_with_kwargs[embed_model_name])
     elif embed_model_name == "Tscontriever_query_only":
         embed_model = ContrieverEmbedder(**embed_model_name_with_kwargs[embed_model_name])
-    elif embed_model_name.capitalize() == "openai":
+    elif embed_model_name.lower() == "openai":
         embed_model = OpenaiEmbedder(**embed_model_name_with_kwargs[embed_model_name])
-    elif embed_model_name.capitalize() == "jinaai":
+    elif embed_model_name.lower() == "jinaai":
         embed_model = JinaaiEmbedder(**embed_model_name_with_kwargs[embed_model_name])
-    elif embed_model_name.capitalize() == "tasb":
+    elif embed_model_name.lower() == "tasb":
         embed_model = TasbEmbedder(**embed_model_name_with_kwargs[embed_model_name])
     elif embed_model_name == 'Tscontriever_query_only_lora':
         embed_model = LoraContrieverEmbedder(**embed_model_name_with_kwargs[embed_model_name])

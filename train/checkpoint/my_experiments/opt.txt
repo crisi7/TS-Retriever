@@ -1,0 +1,57 @@
+                            augmentation: none                                    
+                                   beta1: 0.9                                     
+                                   beta2: 0.98                                    
+                            chunk_length: 256                                     
+                       continue_training: False                                   
+                        contrastive_mode: moco                                    
+                                 dropout: 0.1                                     
+                                     eps: 1e-06                                   
+                               eval_data: ['/root/TS-Retriever/train/dataset/sft/contriever_finetune_eval_v3.jsonl']	[default: []]
+                           eval_datasets: []                                      
+                       eval_datasets_dir: ./                                      
+                               eval_freq: 100                                     	[default: 500]
+                     eval_normalize_text: False                                   
+                             global_rank: 0                                       	[default: None]
+                         label_smoothing: 0.0                                     
+                            loading_mode: split                                   
+                              local_rank: 0                                       	[default: -1]
+                                log_freq: 100                                     
+                              lower_case: False                                   
+                                      lr: 0.0001                                  
+                            lr_min_ratio: 0.0                                     
+                               main_port: 10001                                   
+                                 maxload: None                                    
+               moco_train_mode_encoder_k: False                                   
+                              model_path: facebook/contriever                     	[default: none]
+                                momentum: 0.999                                   
+                           negative_ctxs: 1                                       
+                   negative_hard_min_idx: 0                                       
+                     negative_hard_ratio: 0.0                                     
+                                norm_doc: False                                   
+                              norm_query: False                                   
+                             num_workers: 5                                       
+                                   optim: adamw                                   
+                              output_dir: ./checkpoint/my_experiments             
+                      per_gpu_batch_size: 64                                      
+                 per_gpu_eval_batch_size: 256                                     
+                                 pooling: average                                 
+                       prob_augmentation: 0.0                                     
+                         projection_size: 768                                     
+                              queue_size: 65536                                   
+                             random_init: True                                    	[default: False]
+                               ratio_max: 0.5                                     
+                               ratio_min: 0.1                                     
+                      retriever_model_id: bert-base-uncased                       
+                                     rho: 0.05                                    
+                    sampling_coefficient: 0.0                                     
+                               save_freq: 5000                                    	[default: 50000]
+                               scheduler: linear                                  
+                          score_function: dot                                     
+                                    seed: 0                                       
+                             temperature: 1.0                                     
+                             total_steps: 1500                                    	[default: 1000]
+                              train_data: ['/root/TS-Retriever/train/dataset/sft/contriever_finetune_train_v3.jsonl']	[default: []]
+                            warmup_steps: -1                                      
+                            weight_decay: 0.01                                    
+                              world_size: 1                                       	[default: None]
+

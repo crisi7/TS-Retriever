@@ -1,0 +1,5 @@
+/save_models/*
+/evaluation/models/*
+/evaluation/old_models/*
+/evaluation/eval1_embed_files/*
+/evaluation/temp_embed_files/*

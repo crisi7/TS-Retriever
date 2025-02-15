@@ -67,7 +67,7 @@ class OpenaiEmbedder(Embedder):
 
 class JinaaiEmbedder(Embedder):
     def __init__(self, model_name_or_path):
-        self.model = load_model(model_name_or_path, local_files_only=True, trust_remote_code=True)
+        self.model = load_model(model_name_or_path, local_files_only=False, trust_remote_code=True)
     def embedding(self, content, return_type = 'nparray'):
         content_list = [content]
         embeddings = self.model.encode(content_list)
@@ -75,11 +75,19 @@ class JinaaiEmbedder(Embedder):
             return embeddings[0]
         else:
             return embeddings[0].tolist()
+    def batch_embedding(self, contents, return_type='json'):
+        embeddings = self.model.encode(contents)
+        if return_type == 'json':
+            return [embedding.tolist() for embedding in embeddings]
+        elif return_type == 'nparray':
+            return np.array(embeddings)
+        else:
+            raise ValueError(f"Unsupported return type: {return_type}")
 
 class TasbEmbedder(Embedder):
     def __init__(self, model_name_or_path):
-        self.model = load_model(self.model_path, local_files_only=True)
-        self.tokenizer = load_tokenizer(self.tokenizer_path)
+        self.model = load_model(model_name_or_path, local_files_only=False)
+        self.tokenizer = load_tokenizer(model_name_or_path)
     def embedding(self, content, return_type = 'nparray'):
         inputs = self.tokenizer(content, return_tensors='pt')
         embeddings = self.model(**inputs)[0][:,0,:].squeeze(0)
@@ -87,6 +95,12 @@ class TasbEmbedder(Embedder):
             return embeddings.detach().numpy()
         else:
             return embeddings.detach().numpy().tolist()
+    def batch_embedding(self, contents, return_type='json'):
+        all_embeddings = []
+        for content in contents:
+            embedding = self.embedding(content, return_type=return_type)
+            all_embeddings.append(embedding)
+        return all_embeddings
 
 class ContrieverEmbedder(Embedder):
     def __init__(self, model_name_or_path):
@@ -167,6 +181,21 @@ class RouterDualEncoderRetriever(Embedder):
             return query_embed
         else:
             return query_embed.tolist()
+
+    def batch_embedding(self, contents, return_type='nparry'):
+        embeds = []
+        for content in contents:
+            embed = self.embedding(content, return_type=return_type)
+            embeds.append(embed)
+        if return_type == 'nparray':
+            try:
+                import numpy as np
+                return np.array(embeds)
+            except ImportError:
+                raise ImportError("Numpy is required to return embeddings as numpy array. Please install it.")
+        else:
+            return embeds
+
 
 if __name__ == "__main__":
     encoder = TasbEmbedder()

@@ -14,10 +14,9 @@ import numpy as np
 
 def eval_result(data):
     data_len = len(data)
-    k_range = [1, 3, 5, 10, 20, 50, 100]
+    k_range = [1, 5, 10, 20, 50, 100]
     result_recall = {
         "Mar@1": 0,
-        "Mar@3": 0,
         "Mar@5": 0,
         "Mar@10": 0,
         "Mar@20": 0,
@@ -27,7 +26,6 @@ def eval_result(data):
 
     result_precision = {
         "Map@1": 0,
-        "Map@3": 0,
         "Map@5": 0,
         "Map@10": 0,
         "Map@20": 0,
@@ -68,7 +66,7 @@ def experiment_nobel_with_dense_embed_model(doc_embed_path, query_file, embed_mo
         true_items = d['positive_text']
         answer_names = [item.split('\n')[0] for item in true_items]
         metrics_at_k = {}
-        for k in [1,3,5,10,20,50,100]:
+        for k in [1,5,10,20,50,100]:
             p, r = get_metric_at_k(k, true_items, predict_items)
             metrics_at_k[k] = {'p': p, 'r': r}
         new_d = {
@@ -112,7 +110,7 @@ def experiment_nobel_with_bm25(doc_path:str, query_file:str, embed_model_name:st
             true_items = d['passages']
         answer_names = [item.split('\n')[0] for item in true_items]
         metrics_at_k = {}
-        for k in [1,3,5,10,20,50,100]:
+        for k in [1,5,10,20,50,100]:
             p, r = get_metric_at_k(k, true_items, predict_items)
             metrics_at_k[k] = {'p': p, 'r': r}
         new_d = {

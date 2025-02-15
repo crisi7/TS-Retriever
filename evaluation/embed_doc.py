@@ -12,7 +12,7 @@ def generate_doc_embedding(embedding_save_path:str, file_path:str, embed_model_n
     memory_buffer = MemoryBuffer(file_path=embedding_save_path, embed_model=embed_model)
     with open(file_path, 'r') as f:
         data = json.load(f)
-    for d in tqdm(data):
+    for d in tqdm(data, desc="Embedding docs"):
         memory_buffer.add_memory(d, time=None)
         memory_buffer.save_memory_to_binary()
 
